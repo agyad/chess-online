@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" />
+
+    <title>Chess Openings</title>
+    <link
+      rel="stylesheet"
+      href="/libs/chessboardjs-1.0.0/css/chessboard-1.0.0.min.css"
+    />
+    <script src="/libs/tailwind-3.4.js"></script>
+    <script src="/libs/jquery-3.7.1.min.js"></script>
+    <script src="/libs/chessboardjs-1.0.0/js/chessboard-1.0.0.min.js"></script>
+    <script type="module" src="/js/Openings.js"></script>
+  </head>
+  <body class="bg-purple-50 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header
+      class="bg-gradient-to-r from-purple-600 to-blue-500 text-white p-4 shadow flex justify-between items-center"
+    >
+      <h1 class="text-xl font-bold">♟️ Chess in Arabic – Openings</h1>
+
+      <!-- Home Button -->
+      <a href="/chessinarabic" class="hover:underline"> Home </a>
+    </header>
+
+    <!-- Main content -->
+    <main class="flex flex-1 p-6 gap-6">
+      <!-- Left Card (Bigger) -->
+      <div
+        class="flex-[3] bg-white rounded-xl shadow p-4 flex flex-col border border-purple-200"
+      >
+        <div class="flex gap-6 flex-1">
+          <!-- Chessboard -->
+          <div
+            class="bg-gray-100 shadow-inner rounded-lg flex items-center justify-center"
+          >
+            <div id="myBoard" class="w-[400px] h-[400px]"></div>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <button
+            id="leftArrow"
+            class="bg-white text-purple-600 font-bold px-3 py-1 rounded-lg shadow hover:bg-purple-100 transition"
+          >
+            ◀
+          </button>
+          <button
+            id="rightArrow"
+            class="bg-white text-purple-600 font-bold px-3 py-1 rounded-lg shadow hover:bg-purple-100 transition"
+          >
+            ▶
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Card (Smaller Sidebar) -->
+      <div
+        class="flex-[1] bg-white rounded-xl shadow p-4 border border-purple-200 flex flex-col"
+      >
+        <h2 class="text-lg font-bold text-gray-800 mb-3">Search Results</h2>
+
+        <!-- Scrollable Results -->
+        <div
+          id="results"
+          class="flex-1 overflow-y-auto space-y-2 max-h-[500px]"
+        >
+          <!-- Dynamically added results -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="flex justify-between mt-3">
+          <button
+            id="prevBtn"
+            class="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-3 py-1 rounded-lg shadow hover:opacity-90"
+          >
+            Prev
+          </button>
+          <button
+            id="nextBtn"
+            class="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-3 py-1 rounded-lg shadow hover:opacity-90"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-white shadow-inner py-4 text-center text-sm text-gray-600"
+    >
+      © 2025 ChessinArabic ·
+      <a href="https://github.com/agyad" class="hover:underline" target="_blank"
+        >Agyad Yehia .
+      </a>
+      <a
+        href="https://en.wikipedia.org/wiki/Rules_of_chess"
+        target="_blank"
+        class="hover:underline"
+        >Chess Rules</a
+      >
+    </footer>
+  </body>
+</html>

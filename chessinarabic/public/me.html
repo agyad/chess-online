@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" />
+    <title>My Profile</title>
+    <script src="/libs/tailwind-3.4.js"></script>
+  </head>
+  <body
+    class="bg-gray-100 flex flex-col items-center justify-center min-h-screen"
+  >
+    <!-- Header -->
+    <header
+      class="bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg fixed w-full top-0 left-0 z-50"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">♟ ChessinArabic</h1>
+        <span class="text-sm opacity-90" id="myprofile">My Profile</span>
+      </div>
+    </header>
+
+    <!-- Profile Card -->
+    <div class="bg-white shadow-lg rounded-xl p-8 w-96 mt-24">
+      <h2 class="text-2xl font-semibold text-center mb-6">User Information</h2>
+
+      <div class="grid grid-cols-2 gap-3 text-sm">
+        <div><strong>WinsRate:</strong> <span id="winsrate">-</span></div>
+        <div><strong>Rate:</strong> <span id="rate">-</span></div>
+        <div><strong>Games:</strong> <span id="games">-</span></div>
+        <div><strong>Created:</strong> <span id="createdAt">-</span></div>
+        <div><strong>Wins:</strong> <span id="wins">-</span></div>
+        <div><strong>Loss:</strong> <span id="loss">-</span></div>
+        <div><strong>Drew:</strong> <span id="drew">-</span></div>
+        <div><strong>Username:</strong> <span id="username">-</span></div>
+        <div class="col-span-2">
+          <strong>Email:</strong> <span id="email">-</span>
+        </div>
+      </div>
+    </div>
+    <script src="/js/me.js"></script>
+  </body>
+</html>
